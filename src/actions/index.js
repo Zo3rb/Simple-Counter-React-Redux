@@ -1,7 +1,18 @@
-// Action Creators exported One By One
-export const selectSong = (song) => {
+
+export const incrementCount = () => {
     return {
-        type: 'SONG_SELECTED',
-        payload: song
+        type: 'INCREMENT'
+    }
+}
+
+export const decrementCount = () => {
+    return {
+        type: 'DECREMENT'
+    }
+}
+
+export const resetCount = () => {
+    return {
+        type: 'RESET'
     }
 }
